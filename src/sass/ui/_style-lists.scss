@@ -1,0 +1,404 @@
+//------------------------------------------------------------------------------------------------
+//
+//  リスト用
+//
+//------------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------------------
+//
+//  .articleWrapper
+//
+//----------------------------------------------------------------------------------------
+.articleWrapper{
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid $mike-red;
+
+    /* a{
+        color: #fe1a3a;
+    } */
+
+    @media screen and (min-width: $break-width-pc){
+        padding: 25px;
+    }
+
+    @media screen and (max-width: $break-width-sp){
+        margin-top: 30px;
+        padding: 12px 5px 5px;
+    }
+}
+
+.pageTitle + .articleWrapper{
+
+    @media screen and (max-width: $break-width-sp){
+        padding-top: 35px;
+    }
+
+}
+
+//----------------------------------------------------------------------------------------
+//
+//  .articleBox
+//
+//----------------------------------------------------------------------------------------
+.articleBox{
+    border-top: 2px dotted $mike-red;
+
+    @media screen and (min-width: $break-width-pc){
+        padding: 26px 0 20px;
+    }
+
+    @media screen and (max-width: $break-width-sp){
+        padding: 12px 0 12px;
+    }
+
+    > img{
+        max-width: 100%;
+
+        @media screen and (min-width: $break-width-pc){
+            margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: $break-width-sp){
+            margin-bottom: 8px;
+        }
+    }
+
+    > iframe{
+        margin-bottom: 8px;
+    }
+}
+
+    .articleBox__header{
+
+        @media screen and (min-width: $break-width-pc){
+            margin-bottom: 12px;
+        }
+
+        @media screen and (max-width: $break-width-sp){
+            margin-bottom: 6px;
+        }
+
+    }
+
+        .articleBox__date{
+            font-family: "OpenSans";
+            color: #9f9fa0;
+            font-size: 14px;
+        }
+
+    .articleBox__heading{
+        color: #595757;
+        font-weight: normal;
+        line-height: 1;
+
+        @media screen and (min-width: $break-width-pc){
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        @media screen and (max-width: $break-width-sp){
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+    }
+
+    .articleBox__text{
+        margin-bottom: 5px;
+    }
+
+    .button-more{
+        margin: 7px 0 0 auto;
+        width: 85px;
+
+        @media screen and (min-width: $break-width-pc){
+            display: none;
+        }
+    }
+
+    .articleBox__heading .icon-footprint{
+        vertical-align: -2px;
+        margin-right: 6px;
+    }
+
+    .articleBox__mainImage{
+
+        @media screen and (min-width: $break-width-pc){
+            margin-bottom: 15px;
+        }
+
+        @media screen and (max-width: $break-width-sp){
+            margin-bottom: 10px;
+        }
+    }
+
+.articleBox:first-child{
+    border-top: none;
+
+    @media screen and (min-width: $break-width-pc){
+        padding-top: 0;
+    }
+
+    @media screen and (max-width: $break-width-sp){
+        padding-top: 0;
+    }
+}
+
+//----------------------------------------------------------------------------------------
+//
+//  .articleBox__text
+//
+//----------------------------------------------------------------------------------------
+.articleBox__text{
+
+}
+
+//----------------------------------------------------------------------------------------
+//
+//  .articleFooter
+//
+//----------------------------------------------------------------------------------------
+.articleFooter{
+    margin-top: 8px;
+}
+
+    .socialButtonList{
+        float: left;
+    }
+
+    .articleData{
+        float: right;
+        text-align: right;
+
+        .date{
+            display: inline-block;
+            color: #9f9f9f;
+            font-size: 12px;
+            margin-bottom: 6px;
+        }
+
+        .category{
+            display: inline-block;
+            background-clip: padding-box;
+            background-color: #fd1939;
+            color: #fff;
+            border-radius: 4px;
+            padding: 4px 8px 1px;
+        }
+
+    }
+
+//----------------------------------------------------------------------------------------
+//
+//  .profileBox
+//
+//----------------------------------------------------------------------------------------
+.profileBox{
+    border-bottom: 2px dotted #fe5169;
+    padding: 20px 0;
+
+    &:first-child{
+        padding-top: 0;
+    }
+}
+
+    .profileBox__imgBox{
+
+        @media screen and (min-width: $break-width-pc){
+            float: left;
+            margin-right: 10px;
+            width: 160px;
+        }
+
+        @media screen and (max-width: $break-width-sp){
+            text-align: center;
+        }
+
+    }
+
+        .profileBox__img{
+        }
+
+    .profileBox__text{
+
+        @media screen and (min-width: $break-width-pc){
+            float: left;
+            width: 306px;
+        }
+
+        @media screen and (max-width: $break-width-sp){
+        }
+    }
+
+        .profileBox__name{
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .profileBox__desc{
+        }
+
+.profileBox:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+//----------------------------------------------------------------------------------------
+//
+//  .twitterBoxBox
+//
+//----------------------------------------------------------------------------------------
+.twitterBox{
+    border-bottom: 2px dotted #fe5169;
+    padding: 20px 0;
+    min-height: 310px;
+}
+
+    .twitterBox__imgBox{
+
+        @media screen and (min-width: $break-width-pc){
+            float: left;
+            margin-right: 30px;
+            width: 90px;
+        }
+
+        @media screen and (max-width: $break-width-sp){
+            margin-bottom: 20px;
+        }
+    }
+
+    .twitterBox__widget{
+
+        @media screen and (min-width: $break-width-pc){
+            float: left;
+            width: 300px;
+
+            iframe{
+                height: 300px;
+            }
+        }
+
+        @media screen and (max-width: $break-width-sp){
+
+            iframe{
+                width: 100% !important;
+            }
+
+        }
+
+    }
+
+.twitterBox:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+//----------------------------------------------------------------------------------------
+//
+//  .reactionBox
+//
+//----------------------------------------------------------------------------------------
+.reactionBox{
+
+}
+
+    .reactionBox__title{
+        font-size: 25px;
+        color: #fe1a3a;
+        border-bottom: 1px solid #fe1a3a;
+        margin-bottom: 15px;
+
+        @media screen and (min-width: $break-width-pc){
+            font-size: 25px;
+        }
+
+        @media screen and (max-width: $break-width-sp){
+            font-size: 20px;
+        }
+    }
+
+    .reactionBox__more{
+        margin-top: 5px;
+        text-align: right;
+    }
+
+//----------------------------------------------------------------------------------------
+//
+//  .reactionList
+//
+//----------------------------------------------------------------------------------------
+.reactionList{
+    background-color: #f2f2f3;
+
+    @media screen and (min-width: $break-width-pc){
+        padding: 10px 20px;
+    }
+
+    @media screen and (max-width: $break-width-sp){
+        padding: 10px 15px 20px;
+    }
+}
+
+    .reactionList__inner{
+        border-bottom: 1px solid #dcdddd;
+        padding-bottom: 5px;
+    }
+
+        .reactionList__img{
+            vertical-align: middle;
+            margin-right: 3px;
+        }
+
+        .reactionList__text{
+            display: inline-block;
+            vertical-align: middle;
+            width: 412px;
+        }
+
+//----------------------------------------------------------------------------------------
+//
+//  .pagingNavi
+//
+//----------------------------------------------------------------------------------------
+.pagingNavi{
+    text-align: center;
+    font-size: 15px;
+    line-height: 1;
+
+    @media screen and (min-width: $break-width-pc){
+        margin-top: 35px;
+    }
+
+
+    @media screen and (max-width: $break-width-sp){
+        margin-top: 20px;
+    }
+}
+
+    .pagingNavi__prev{
+        display: inline-block;
+    }
+
+    .pagingNavi__no{
+        display: inline-block;
+        margin: 0 4px;
+    }
+
+    .pagingNavi__next{
+        display: inline-block;
+    }
+
+    .pagingNavi__prev a,
+    .pagingNavi__next a{
+        display: block;
+        color: #fe1a3a;
+        text-decoration: none;
+        background-color: #fff;
+        border: 1px solid $mike-red;
+        padding: 7px 7px 4px;
+    }
+
+    .pagingNavi__prev a:hover,
+    .pagingNavi__next a:hover{
+        text-decoration: underline;
+    }

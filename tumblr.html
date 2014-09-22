@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>{Title}</title>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="{MetaDescription}">
+    <meta name="Copyright" content="">
+
+    <!--//////////////     Twitter Account設定     //////////////-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="**アカウント名**">
+
+    <!--//////////////     OGP Metaタグ設定     //////////////-->
+    <meta property="og:title" content="**タイトル**">
+    <meta property="og:description" content="**サイトの説明**">
+    <meta property="og:url" content="**サイトのURL**">
+    <meta property="og:image" content="**使用する画像URL**">
+    <meta property="og:site_name" content="wordbook.asia">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+
+    <!--//////////////     付加リンク    //////////////-->
+    <link rel="shortcut icon" href="{Favicon}" />
+    <link rel="alternate" type="application/rss+xml" href="{RSS}" />
+
+    <link rel="stylesheet" href="css/trunk-tumblr.css">
+
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body class="page-top">
+    <div class="l-wrapper">
+        <header class="l-mainHeader">
+    <div class="mainHeader-top">
+        <h1><a href="index.html"><span class="logo-main mainHeader-top__logo"></span></a></h1>
+    </div>
+    <nav class="headerMenu">
+        <ul class="headerMenu-list">
+            <li class="headerMenu-listInner"><a href="list.html"><span class="menuImg menu-news"></span></a></li><!--
+         --><li class="headerMenu-listInner"><a href="profile.html"><span class="menuImg menu-profile"></span></a></li><!--
+         --><li class="headerMenu-listInner"><a href="list.html"><span class="menuImg menu-live"></span></a></li><!--
+         --><li class="headerMenu-listInner"><a href="list.html"><span class="menuImg menu-music"></span></a></li><!--
+         --><li class="headerMenu-listInner"><a href="list.html"><span class="menuImg menu-blog"></span></a></li>
+        </ul>
+    </nav>
+</header>        <div class="l-container clearfix">
+            {block:IndexPage}
+	<div class="top-mainVisual">
+    <img src="img/img-mainVisual.jpg" alt="" class="top-mainVisual__img">
+</div>
+<ul class="top-bannerList clearfix">
+    <li class="top-bannerList__inner"><a href="#"><span class="banner-mail"></span></a></li>
+    <li class="top-bannerList__inner top-bannerList__blog"><a href="list.html"><span class="banner-blog"></span></a></li>
+    <li class="top-bannerList__inner top-bannerList__store"><a href="#"><span class="banner-store"></span></a></li>
+    <li class="top-bannerList__inner top-bannerList__twitter"><a href="twitter.html"><span class="banner-twitter top-bannerList__innerImg--twitter"></span></a></li>
+</ul>{/block:IndexPage}
+<div class="l-mainContent">
+    <h2 class="pageTitle"><div class="pageTitle__inner"><span class="titleIcon icon-title-{URLSafeTag}"></span>{Tag}</div></h2>
+    <section class="articleWrapper">
+        {block:Posts}
+            {block:Text}
+            <article class="articleBox">
+                {block:Date}
+                    <div class="articleBox__header">
+                        <time class="articleBox__date">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}</time>
+                    </div>
+                {/block:Date}
+                {block:Title}<h3 class="articleBox__heading"><span class="icon-footprint"></span>{Title}</h3>{/block:Title}
+                <div class="articleBox__text">{Body}</div>
+                <a href="single.html" class="button-more">もっと見る<span class="icon-more-arrow"></span></a>
+                    {block:PostNotes}
+                    <div class="reactionBox">
+                        <div class="reactionBox__title">{block:NoteCount}{NoteCountWithLabel}{/block:NoteCount}</div>
+                        {PostNotes-64}
+                        <ul class="reactionList">
+                            <li class="reactionList__inner">
+                                <img src="http://dummyimage.com/16x16/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="reactionList__img">
+                                <p class="reactionList__text"><a href="#">000mhz</a> like this</p>
+                            </li>
+                            <li class="reactionList__inner">
+                                <img src="http://dummyimage.com/16x16/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="reactionList__img">
+                                <p class="reactionList__text"><a href="#">000mhz</a> like this</p>
+                            </li>
+                            <li class="reactionList__inner">
+                                <img src="http://dummyimage.com/16x16/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="reactionList__img">
+                                <p class="reactionList__text"><a href="#">000mhz</a> like this</p>
+                            </li>
+                            <li class="reactionList__inner">
+                                <img src="http://dummyimage.com/16x16/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="reactionList__img">
+                                <p class="reactionList__text"><a href="#">000mhz</a> like this</p>
+                            </li>
+                            <li class="reactionList__inner">
+                                <img src="http://dummyimage.com/16x16/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="reactionList__img">
+                                <p class="reactionList__text"><a href="#">000mhz</a> like this</p>
+                            </li>
+                        </ul>
+                        <div class="reactionBox__more"><a href="#">more▼</a></div>
+                    </div>
+                    {/block:PostNotes}
+            </article>
+            {/block:Text}
+            {block:Photo}
+                <article class="articleBox">
+                    {block:Date}
+                        <div class="articleBox__header">
+                            <time class="articleBox__date">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}</time>
+                        </div>
+                    {/block:Date}
+                    <img src="{PhotoURL-500}" alt="{PhotoAlt}">
+                    {block:Caption}<div class="articleBox__text">{Caption}</div>{/block:Caption} 
+                </article>
+            {/block:Photo}
+            {block:Video}
+                <article class="articleBox">
+                    {block:Date}
+                        <div class="articleBox__header">
+                            <time class="articleBox__date">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}</time>
+                        </div>
+                    {/block:Date}
+                    {Video-500}
+                    {block:Caption}<div class="articleBox__text">{Caption}</div>{/block:Caption} 
+                </article>
+            {/block:Video}
+        {/block:Posts}
+    </section>
+
+    {block:Pagination}
+    <ul class="pagingNavi">
+        <li class="pagingNavi__prev">{block:PreviousPage}<a href="{PreviousPage}">{/block:PreviousPage}&lt;新しい投稿{block:PreviousPage}</a>{/block:PreviousPage}</li>
+        <li class="pagingNavi__no">{CurrentPage}/{TotalPages}</li>
+        {block:NextPage}<li class="pagingNavi__next">{block:NextPage}<a href="{NextPage}">{/block:NextPage}古い投稿&gt;{block:NextPage}</a>{/block:NextPage}</li>
+    </ul>
+    {/block:Pagination}
+</div>
+<aside class="l-sidebar">
+    <ul class="sidebar-bannerList clearfix">
+        <li class="sidebar-bannerList__inner"><a href="#"><span class="banner-mail"></span></a></li>
+        <li class="sidebar-bannerList__inner sidebar-bannerList__inner--blog"><a href="list.html"><span class="banner-blog"></span></a></li>
+        <li class="sidebar-bannerList__inner sidebar-bannerList__inner--store"><a href="#"><span class="banner-store"></span></a></li>
+        <li class="sidebar-bannerList__inner sidebar-bannerList__inner--twitter"><a href="twitter.html"><span class="banner-twitter"></span></a></li>
+    </ul>
+    <a class="twitter-timeline"  href="https://twitter.com/miketoroizu" data-widget-id="511492193022783488">@miketoroizu からのツイート</a>
+</aside>        </div>
+        <footer class="l-mainFooter">
+            <small class="copyright">ミケトロイズ 2014 Allright Reserved.</small>
+        </footer>
+    </div>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=174963715893390&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <script src="js/script.js"></script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</body>
+</html>

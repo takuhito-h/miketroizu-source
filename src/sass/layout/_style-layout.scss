@@ -1,0 +1,240 @@
+//------------------------------------------------------------------------------------------------
+//
+//  レイアウト用
+//
+//------------------------------------------------------------------------------------------------
+
+//--------------------------------------------------------------------
+//  .l-mainHeader
+//--------------------------------------------------------------------
+.l-mainHeader{
+}
+
+.mainHeader-top{
+    margin: 0 auto;
+    text-align: center;
+
+    @media screen and (max-width: $break-width-sp){
+        padding: 25px 0 20px;
+    }
+
+    @media screen and (min-width: $break-width-pc){
+        padding: 35px 0 25px;
+        width: $wrapper-width;
+    }
+}
+
+    .mainHeader-top__logo{
+
+    }
+
+.headerMenu{
+    position: relative;
+
+    @media screen and (max-width: $break-width-sp){
+        padding: 0 5px;
+    }   
+}
+
+    .headerMenu-list{
+        position: relative;
+        margin: 0 auto;
+
+        @media screen and (min-width: $break-width-pc){
+            width: $wrapper-width;
+        }
+    }
+
+        .headerMenu-listInner{
+            position: relative;
+            z-index: 10;
+            display: inline-block;
+            vertical-align: bottom;
+
+            @media screen and (min-width: $break-width-pc){
+
+                a:hover{
+                    @include opacity(1);
+                    
+                    .menu-news{
+                        @include sprite-background($_menu-news_on);
+                    }
+    
+                    .menu-profile{
+                        @include sprite-background($_menu-profile_on);
+                    }
+    
+                    .menu-live{
+                        @include sprite-background($_menu-live_on);
+                    }
+    
+                    .menu-music{
+                        @include sprite-background($_menu-music_on);
+                    }
+    
+                    .menu-blog{
+                        @include sprite-background($_menu-blog_on);
+                    }
+                }
+            }
+
+            @media screen and (max-width: $break-width-sp){
+                width: 25%;
+            
+                &:last-child{
+                    display: none;
+                }
+
+            }
+        }
+
+            .headerMenu-listInner a{
+                display: block;
+                text-align: center;
+
+                @media screen and (min-width: $break-width-pc){
+                    width: 160px;
+                }
+
+                @media screen and (max-width: $break-width-sp){
+                    padding-bottom: 6px;
+                }
+            }
+
+            .headerMenu-listInner .menuImg{
+                vertical-align: bottom;
+            }
+
+        .headerMenu-listInner:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            @media screen and (min-width: $break-width-pc){
+                border-left: 2px dotted #fff;
+                height: 40px;
+            }
+
+            @media screen and (max-width: $break-width-sp){
+                border-left: 1px dotted #fff;
+                height: 50px;
+            }
+        }
+
+    .headerMenu-list:before{
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        @media screen and (min-width: $break-width-pc){
+            border-left: 2px dotted #fff;
+            height: 40px;
+        }
+
+        @media screen and (max-width: $break-width-sp){
+            border-left: 1px dotted #fff;
+            height: 50px;
+        }
+    }
+
+.headerMenu:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #e85298;
+    width: 100%;
+
+    @media screen and (min-width: $break-width-pc){
+        height: 40px;
+    }
+
+    @media screen and (max-width: $break-width-sp){
+        height: 50px;
+    }
+}
+
+//--------------------------------------------------------------------
+//  .l-wrapper
+//--------------------------------------------------------------------
+.l-wrapper{
+    background: url(../img/common/bg-cat.png) center 300px no-repeat;
+}
+
+//--------------------------------------------------------------------
+//  .l-container
+//--------------------------------------------------------------------
+.l-container{
+    margin: 0 auto;
+
+    @media screen and (min-width: $break-width-pc){
+        position: relative;
+        width: $wrapper-width;
+    }
+
+    @media screen and (max-width: $break-width-sp){
+        padding: 10px 10px 20px;
+    }
+}
+
+//--------------------------------------------------------------------
+//  .l-mainContent
+//--------------------------------------------------------------------
+.l-mainContent{
+
+    @media screen and (min-width: $break-width-pc){
+        position: relative;
+        float: left;
+        margin-right: 50px;
+        padding: 20px 0 30px;
+        width: 530px;
+    }
+
+    @media screen and (max-width: $break-width-sp){
+        position: relative;
+    }
+
+}
+
+//--------------------------------------------------------------------
+//  .l-sidebar
+//--------------------------------------------------------------------
+.l-sidebar{
+
+    @media screen and (min-width: $break-width-pc){
+        float: left;
+        padding: 20px 0;
+        width: 220px;
+        
+        .twitter-timeline{
+            margin-top: 10px;
+        }
+    }    
+
+    @media screen and (max-width: $break-width-sp){
+        text-align: center;
+        margin-top: 20px;
+        
+        .twitter-timeline{
+            display: none;
+        }
+    }
+}
+
+//--------------------------------------------------------------------
+//  .l-mainFooter
+//--------------------------------------------------------------------
+.l-mainFooter{
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    background-color: #e85298;
+    width: 100%;
+    height: 50px;
+}
+
+    .copyright{
+        font-size: 12px;
+    }

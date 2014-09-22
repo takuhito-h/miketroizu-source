@@ -1,0 +1,172 @@
+//--------------------------------------------------------------------------------------------------
+//
+//  Sprite画像
+//
+//--------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
+//
+//  ロゴ
+//
+//----------------------------------------------------------------------------------------
+.logo-main{
+
+    // @media screen and (min-width: $break-width-pc){
+    	@include sprite-background($_logo-main);
+    // }
+
+    /* @media screen and (max-width: $break-width-sp){
+    	@include sprite-background($_mobile_logo-main, true);
+    } */
+}
+
+//----------------------------------------------------------------------------------------
+//
+//  アイコン
+//
+//----------------------------------------------------------------------------------------
+.icon-title-music{
+
+    @media screen and (min-width: $break-width-pc){
+    	@include sprite-background($_icon-title-music);
+    }
+
+    @media screen and (max-width: $break-width-sp){
+    	@include sprite-background($_mobile_icon-title-music, true);
+    }
+}
+
+.icon-title-news{
+
+    @media screen and (min-width: $break-width-pc){
+    	@include sprite-background($_icon-title-news);
+    }
+
+    @media screen and (max-width: $break-width-sp){
+    	@include sprite-background($_mobile_icon-title-news, true);
+    }
+}
+
+.icon-title-profile{
+
+    @media screen and (min-width: $break-width-pc){
+    	@include sprite-background($_icon-title-profile);
+    }
+
+    @media screen and (max-width: $break-width-sp){
+    	@include sprite-background($_mobile_icon-title-profile, true);
+    }
+}
+
+.icon-title-twitter{
+
+    @media screen and (min-width: $break-width-pc){
+    	@include sprite-background($_icon-title-twitter);
+    }
+
+    @media screen and (max-width: $break-width-sp){
+    	@include sprite-background($_mobile_icon-title-twitter, true);
+    }
+}
+
+.icon-footprint{
+	@include sprite-background($_icon-footprint);
+}
+
+.icon-more-arrow{
+    @include sprite-background($_icon-more-arrow, true);
+}
+
+//----------------------------------------------------------------------------------------
+//
+//  その他画像
+//
+//----------------------------------------------------------------------------------------
+.menu-blog{
+    @include sprite-background($_menu-blog);
+}
+
+.menu-live{
+
+    @media screen and (min-width: $break-width-pc){
+    	@include sprite-background($_menu-live);
+    }
+
+    @media screen and (max-width: $break-width-sp){
+    	@include sprite-background($_mobile_menu-live, true);
+    }
+}
+
+.menu-music{
+
+    @media screen and (min-width: $break-width-pc){
+    	@include sprite-background($_menu-music);
+    }
+
+    @media screen and (max-width: $break-width-sp){
+    	@include sprite-background($_mobile_menu-music, true);
+    }
+}
+
+.menu-news{
+
+    @media screen and (min-width: $break-width-pc){
+    	@include sprite-background($_menu-news);
+    }
+
+    @media screen and (max-width: $break-width-sp){
+    	@include sprite-background($_mobile_menu-news, true);
+    }
+}
+
+.menu-profile{
+
+    @media screen and (min-width: $break-width-pc){
+    	@include sprite-background($_menu-profile);
+    }
+
+    @media screen and (max-width: $break-width-sp){
+    	@include sprite-background($_mobile_menu-profile, true);
+    }
+}
+
+//----------------------------------------------------------------------------------------
+//
+//  バナー
+//
+//----------------------------------------------------------------------------------------
+.banner-mail{
+
+    @media screen and (min-width: $break-width-pc){
+    	@include sprite-background($_banner-mail);
+    }
+
+    @media screen and (max-width: $break-width-sp){
+    	@include sprite-background($_mobile_banner-mail, true);
+    }
+}
+
+.banner-blog{
+    @include sprite-background($_mobile_banner-blog, true);
+}
+
+.banner-store{
+
+    @media screen and (min-width: $break-width-pc){
+    	@include sprite-background($_banner-store);
+    }
+
+    @media screen and (max-width: $break-width-sp){
+    	@include sprite-background($_mobile_banner-store, true);
+    }
+}
+
+.banner-twitter{
+
+    @media screen and (min-width: $break-width-pc){
+    	@include sprite-background($_banner-twitter);
+    }
+
+    @media screen and (max-width: $break-width-sp){
+    	@include sprite-background($_mobile_banner-twitter, true);
+    }
+}

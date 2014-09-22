@@ -1,0 +1,69 @@
+//------------------------------------------------------------------------------------------------
+//
+//  見出し用
+//
+//------------------------------------------------------------------------------------------------
+
+//--------------------------------------------------------------------
+//  .pageTitle
+//--------------------------------------------------------------------
+.pageTitle{
+    font-family: "Sniglet", cursive;
+
+    @media screen and (min-width: $break-width-pc){
+        position: relative;
+	    color: #d8160c;
+	    font-size: 35px;
+	    line-height: 1;
+	    padding-bottom: 19px;
+	    margin: 17px 0 32px;
+        
+        .titleIcon{
+            vertical-align: bottom;
+        }
+
+        &:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;        
+            background: radial-gradient(circle, #fe1a3a 3px, transparent 1px) repeat scroll 0% 0% transparent;
+            background-size: 9px 6px;
+            height: 6px;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: $break-width-sp){
+    	position: absolute;
+    	left: 0;
+    	top: 0;
+    	box-sizing: border-box;
+    	background-color: #fe1a3a;
+        line-height: 1.4;
+    	font-size: 18px;
+        color: #fff;
+    	padding: 2px 15px 0;
+    	border-radius: 5px 5px 0 0;
+    	width: 100%;
+        height: 28px;
+        
+        .pageTitle__inner{
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+        }
+        
+        .titleIcon{
+            vertical-align: baseline;
+            
+            &.icon-title-news{
+                margin-right: 10px;
+            }
+            
+            &.icon-title-profile{
+                margin-right: 10px;
+            }
+        }
+    }
+}
