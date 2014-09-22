@@ -1,0 +1,81 @@
+$_banner-mail: 246px 298px -246px -298px 220px 113px 925px 644px '../img/sprite.png';
+$_banner-store: 483px 420px -483px -420px 220px 90px 925px 644px '../img/sprite.png';
+$_banner-twitter: 664px 298px -664px -298px 243px 103px 925px 644px '../img/sprite.png';
+$_icon-blog: 577px 525px -577px -525px 38px 58px 925px 644px '../img/sprite.png';
+$_icon-blog_on: 399px 525px -399px -525px 45px 60px 925px 644px '../img/sprite.png';
+$_icon-footprint: 889px 445px -889px -445px 20px 20px 925px 644px '../img/sprite.png';
+$_icon-live: 529px 525px -529px -525px 46px 59px 925px 644px '../img/sprite.png';
+$_icon-more-arrow: 889px 420px -889px -420px 25px 23px 925px 644px '../img/sprite.png';
+$_icon-news: 841px 525px -841px -525px 56px 56px 925px 644px '../img/sprite.png';
+$_icon-profile: 238px 588px -238px -588px 60px 54px 925px 644px '../img/sprite.png';
+$_icon-title-music: 816px 420px -816px -420px 71px 62px 925px 644px '../img/sprite.png';
+$_icon-title-news: 300px 588px -300px -588px 82px 52px 925px 644px '../img/sprite.png';
+$_icon-title-profile: 245px 525px -245px -525px 69px 61px 925px 644px '../img/sprite.png';
+$_icon-title-twitter: 384px 588px -384px -588px 61px 47px 925px 644px '../img/sprite.png';
+$_logo-main: 0px 420px 0px -420px 371px 103px 925px 644px '../img/sprite.png';
+$_menu-blog: 446px 525px -446px -525px 81px 60px 925px 644px '../img/sprite.png';
+$_menu-blog_on: 316px 525px -316px -525px 81px 60px 925px 644px '../img/sprite.png';
+$_menu-live: 79px 525px -79px -525px 77px 61px 925px 644px '../img/sprite.png';
+$_menu-live_on: 0px 525px 0px -525px 77px 61px 925px 644px '../img/sprite.png';
+$_menu-music: 729px 525px -729px -525px 110px 57px 925px 644px '../img/sprite.png';
+$_menu-music_on: 617px 525px -617px -525px 110px 57px 925px 644px '../img/sprite.png';
+$_menu-news: 447px 588px -447px -588px 110px 46px 925px 644px '../img/sprite.png';
+$_menu-news_on: 559px 588px -559px -588px 110px 46px 925px 644px '../img/sprite.png';
+$_menu-profile: 119px 588px -119px -588px 117px 56px 925px 644px '../img/sprite.png';
+$_menu-profile_on: 0px 588px 0px -588px 117px 56px 925px 644px '../img/sprite.png';
+$_mobile_banner-blog: 305px 143px -305px -143px 620px 141px 925px 644px '../img/sprite.png';
+$_mobile_banner-mail: 305px 0px -305px 0px 620px 141px 925px 644px '../img/sprite.png';
+$_mobile_banner-store: 0px 155px 0px -155px 300px 141px 925px 644px '../img/sprite.png';
+$_mobile_banner-twitter: 0px 0px 0px 0px 303px 153px 925px 644px '../img/sprite.png';
+$_mobile_icon-title-music: 558px 298px -558px -298px 104px 104px 925px 644px '../img/sprite.png';
+$_mobile_icon-title-news: 158px 525px -158px -525px 85px 61px 925px 644px '../img/sprite.png';
+$_mobile_icon-title-profile: 373px 420px -373px -420px 108px 102px 925px 644px '../img/sprite.png';
+$_mobile_icon-title-twitter: 705px 420px -705px -420px 109px 89px 925px 644px '../img/sprite.png';
+$_mobile_menu-live: 0px 298px 0px -298px 65px 120px 925px 644px '../img/sprite.png';
+$_mobile_menu-music: 161px 298px -161px -298px 83px 115px 925px 644px '../img/sprite.png';
+$_mobile_menu-news: 468px 298px -468px -298px 88px 107px 925px 644px '../img/sprite.png';
+$_mobile_menu-profile: 67px 298px -67px -298px 92px 117px 925px 644px '../img/sprite.png';
+
+// $list: <X> <Y> <Offset X> <Offset Y> <Width> <Height> <Total Width> <Total Height> <Image Path>
+
+//------------------------------------------------------------------------------------------------
+//
+//  Mixin - Sprites
+//
+//------------------------------------------------------------------------------------------------
+
+//--------------------------------------------------------------------------------------
+//  Mixin - 背景を表示（widthとheightが指定され、ブロックサイズが変わるので注意）
+//--------------------------------------------------------------------------------------
+@mixin sprite-background($sprite, $hidpiFlag: false) {
+    $imagePath: nth($sprite, 9);
+    display: inline-block;
+    background-image: url("#{$imagePath}");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    @if ($hidpiFlag == true){
+        width: nth($sprite, 5) / 2;
+        height: nth($sprite, 6) / 2;
+        background-position: round( nth($sprite, 3) / 2 ) round( nth($sprite, 4) / 2 );
+        background-size: round( nth($sprite, 7) / 2 ) round( nth($sprite, 8) / 2 );
+    }@else{
+        width: nth($sprite, 5);
+        height: nth($sprite, 6);
+        background-position: nth($sprite, 3) nth($sprite, 4);
+    }
+}
+
+
+//--------------------------------------------------------------------------------------
+//  Mixin - sprite-backgroundをafterに突っ込む（親要素は自身を包括ブロックにしておく必要あり）
+//--------------------------------------------------------------------------------------
+@mixin sprite-after($name, $left, $top){
+    &:after{
+        content: " ";
+        position: absolute;
+        display: block;
+        top: $top;
+        left: $left;
+        @include sprite-background($name);
+    }
+}
