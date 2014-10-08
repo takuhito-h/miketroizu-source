@@ -1,0 +1,32 @@
+//------------------------------------------------------------------------------------------------
+//
+//  ページ個別表示制御
+//
+//------------------------------------------------------------------------------------------------
+.page-tag{
+	.articleBox{
+		display: block;
+	}
+
+	.bl-mainVisual{
+		display: none;
+	}
+
+	.top-bannerList{
+		display: none;
+	}
+}
+
+.page-single{
+	.articleBox{
+		display: block;
+	}
+
+	.bl-mainVisual{
+		display: none;
+	}
+
+	.top-bannerList{
+		display: none;
+	}
+}

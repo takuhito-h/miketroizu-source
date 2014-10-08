@@ -1,0 +1,43 @@
+<div class="l-mainContent">
+    <section class="articleWrapper">
+        {block:Posts}
+            <article class="articleBox">
+                {block:Text}
+                    {block:Title}<h3 class="articleBox__heading"><span class="icon-footprint"></span>{Title}</h3>{/block:Title}
+                    <div class="articleBox__text">{Body}</div>
+                {/block:Text}
+                {block:Photo}
+                    <img src="{PhotoURL-500}" alt="{PhotoAlt}">
+                    {block:Caption}<div class="articleBox__text">{Caption}</div>{/block:Caption}
+                {/block:Photo}
+                {block:Audio}
+                    {block:AudioEmbed}{AudioEmbed-500}{/block:AudioEmbed}
+                    {block:AudioPlayer}{AudioPlayer}{/block:AudioPlayer}
+                    {block:Caption}<div class="articleBox__text">{Caption}</div>{/block:Caption}
+                {/block:Audio}
+                {block:Video}
+                    {Video-500}
+                    {block:Caption}<div class="articleBox__text">{Caption}</div>{/block:Caption}
+                {/block:Video}
+                <div class="articleFooter clearfix">
+                    <ul class="socialButtonList">
+                        <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="miketoroizu">Tweet</a></li>
+                        <li class="facebook"><div class="fb-like" data-href="{Permalink}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></li>
+                    </ul>
+                    <div class="articleData">
+                        {block:Date}<time class="date">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}</time>{/block:Date}
+                        {block:HasTags}{block:Tags}<span class="category">{Tag}</span>{/block:Tags}{/block:HasTags}
+                    </div>
+                </div>
+                {block:PostNotes}
+                <div class="reactionBox">
+                    {block:NoteCount}<div class="reactionBox__title">Reactions({NoteCount})</div>{/block:NoteCount}
+                    {PostNotes}
+                    <!-- <div class="reactionBox__more"><a href="#">more▼</a></div> -->
+                </div>
+                {/block:PostNotes}
+            </article>
+        {/block:Posts}
+    </section>
+</div>
+<% include "common/sidebar.ect" %>

@@ -8,14 +8,22 @@
 //  .sidebar-bannerList
 //--------------------------------------------------------------------
 .sidebar-bannerList{
-    
+
+    @media screen and (max-width: $break-width-sp){
+        margin: 0 -5px;
+    }
+
 }
 
     .sidebar-bannerList__inner{
         margin-top: 10px;
-        
+
         &:first-child{
         	margin-top: 0;
+        }
+
+        a:hover{
+            @include opacity(1);
         }
     }
 
@@ -24,7 +32,7 @@
         @media screen and (min-width: $break-width-pc){
             display: none;
         }
-        
+
     }
 
     .sidebar-bannerList__inner--twitter{
@@ -44,5 +52,5 @@
             display: inline-block;
             margin-top: 0;
         }
-        
+
     }

@@ -10,13 +10,14 @@
 //----------------------------------------------------------------------------------------
 .logo-main{
 
-    // @media screen and (min-width: $break-width-pc){
+    @media screen and (min-width: $break-width-pc){
     	@include sprite-background($_logo-main);
-    // }
+    }
 
-    /* @media screen and (max-width: $break-width-sp){
+    @media screen and (max-width: $break-width-sp){
     	@include sprite-background($_mobile_logo-main, true);
-    } */
+    }
+
 }
 
 //----------------------------------------------------------------------------------------
@@ -33,6 +34,7 @@
     @media screen and (max-width: $break-width-sp){
     	@include sprite-background($_mobile_icon-title-music, true);
     }
+
 }
 
 .icon-title-news{
@@ -44,6 +46,7 @@
     @media screen and (max-width: $break-width-sp){
     	@include sprite-background($_mobile_icon-title-news, true);
     }
+
 }
 
 .icon-title-profile{
@@ -55,6 +58,7 @@
     @media screen and (max-width: $break-width-sp){
     	@include sprite-background($_mobile_icon-title-profile, true);
     }
+
 }
 
 .icon-title-twitter{
@@ -66,10 +70,43 @@
     @media screen and (max-width: $break-width-sp){
     	@include sprite-background($_mobile_icon-title-twitter, true);
     }
+
+}
+
+.icon-title-live{
+
+    @media screen and (min-width: $break-width-pc){
+        @include sprite-background($_icon-title-live);
+    }
+
+    @media screen and (max-width: $break-width-sp){
+        @include sprite-background($_mobile_icon-title-live, true);
+    }
+
+}
+
+.icon-title-blog{
+
+    @media screen and (min-width: $break-width-pc){
+        @include sprite-background($_icon-title-blog);
+    }
+
+    @media screen and (max-width: $break-width-sp){
+        @include sprite-background($_mobile_icon-title-blog, true);
+    }
+
 }
 
 .icon-footprint{
-	@include sprite-background($_icon-footprint);
+
+    @media screen and (min-width: $break-width-pc){
+        @include sprite-background($_icon-footprint);
+    }
+
+    @media screen and (max-width: $break-width-sp){
+        @include sprite-background($_mobile_icon-footprint, true);
+    }
+
 }
 
 .icon-more-arrow{
@@ -94,6 +131,7 @@
     @media screen and (max-width: $break-width-sp){
     	@include sprite-background($_mobile_menu-live, true);
     }
+
 }
 
 .menu-music{
@@ -105,6 +143,7 @@
     @media screen and (max-width: $break-width-sp){
     	@include sprite-background($_mobile_menu-music, true);
     }
+
 }
 
 .menu-news{
@@ -116,6 +155,7 @@
     @media screen and (max-width: $break-width-sp){
     	@include sprite-background($_mobile_menu-news, true);
     }
+
 }
 
 .menu-profile{
@@ -127,6 +167,7 @@
     @media screen and (max-width: $break-width-sp){
     	@include sprite-background($_mobile_menu-profile, true);
     }
+
 }
 
 //----------------------------------------------------------------------------------------
@@ -143,6 +184,7 @@
     @media screen and (max-width: $break-width-sp){
     	@include sprite-background($_mobile_banner-mail, true);
     }
+
 }
 
 .banner-blog{
@@ -158,6 +200,7 @@
     @media screen and (max-width: $break-width-sp){
     	@include sprite-background($_mobile_banner-store, true);
     }
+
 }
 
 .banner-twitter{
@@ -169,4 +212,5 @@
     @media screen and (max-width: $break-width-sp){
     	@include sprite-background($_mobile_banner-twitter, true);
     }
+
 }

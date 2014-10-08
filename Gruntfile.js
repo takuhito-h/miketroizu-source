@@ -1,5 +1,5 @@
 module.exports = function(grunt){
-  
+
   require("jit-grunt")(grunt, {
     sprite: "grunt-spritesmith"
   });
@@ -22,7 +22,9 @@ module.exports = function(grunt){
       },
       tumblr : {
         variables : {
-          source_domain : "//cdn.rawgit.com/takuhito-h/miketroizu-source/master/"
+          // source_domain : "//cdn.rawgit.com/takuhito-h/miketroizu-source/master/"
+          // source_domain : ""
+          source_domain : "https://dl.dropboxusercontent.com/u/12913911/miketrois/"
         },
         files : [{
           expand : true,
@@ -67,7 +69,7 @@ module.exports = function(grunt){
       pc : {
         options : {
           map      : true,
-          browsers : ["last 3 versions", "ie 8"]          
+          browsers : ["last 3 versions", "ie 8"]
         },
         src : "css/trunk-*.css"
       }
@@ -78,13 +80,8 @@ module.exports = function(grunt){
         files : {
           "js/script.min.js" : [
             "src/js/vendor/*.js",
-            "src/js/vendor/mock/*.js",
-            "src/js/modules/dependents/*.js",
-            "src/js/modules/*.js",
-            "src/js/module_manager.js",
-            "src/js/pages/*.js",
-            "src/js/application.js",
-            "src/js/init.js"
+            "src/js/library/*.js",
+            "src/js/application.js"
           ]
         }
       }
@@ -132,7 +129,7 @@ module.exports = function(grunt){
 
   // mozjpegが存在したら、imageminにmozjpeg使用のオプションを追加
   if(grunt.file.exists("node_modules/imagemin-mozjpeg")){
-    var mozjpeg = require("imagemin-mozjpeg");  
+    var mozjpeg = require("imagemin-mozjpeg");
 
     grunt.config.set(["imagemin", "pc", "options", "use"], [mozjpeg()]);
   }

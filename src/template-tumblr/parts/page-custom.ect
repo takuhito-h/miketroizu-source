@@ -1,0 +1,81 @@
+<div class="l-mainContent">
+    {block:HasPages}
+        <h2 class="pageTitle"><div class="pageTitle__inner"><span class="titleIcon icon-title-{Label}"></span>{Label}</div></h2>
+    {/block:HasPages}
+    <section class="articleWrapper">
+        {block:Posts}
+            {block:Text}
+            <article class="articleBox">
+                {block:Date}
+                    <div class="articleBox__header">
+                        <time class="articleBox__date">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}</time>
+                    </div>
+                {/block:Date}
+                {block:Title}<h3 class="articleBox__heading"><span class="icon-footprint"></span>{Title}</h3>{/block:Title}
+                <div class="articleBox__text">{Body}</div>
+                <a href="single.html" class="button-more">もっと見る<span class="icon-more-arrow"></span></a>
+                    {block:PostNotes}
+                    <div class="reactionBox">
+                        <div class="reactionBox__title">{block:NoteCount}{NoteCountWithLabel}{/block:NoteCount}</div>
+                        {PostNotes-64}
+                        <ul class="reactionList">
+                            <li class="reactionList__inner">
+                                <img src="http://dummyimage.com/16x16/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="reactionList__img">
+                                <p class="reactionList__text"><a href="#">000mhz</a> like this</p>
+                            </li>
+                            <li class="reactionList__inner">
+                                <img src="http://dummyimage.com/16x16/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="reactionList__img">
+                                <p class="reactionList__text"><a href="#">000mhz</a> like this</p>
+                            </li>
+                            <li class="reactionList__inner">
+                                <img src="http://dummyimage.com/16x16/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="reactionList__img">
+                                <p class="reactionList__text"><a href="#">000mhz</a> like this</p>
+                            </li>
+                            <li class="reactionList__inner">
+                                <img src="http://dummyimage.com/16x16/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="reactionList__img">
+                                <p class="reactionList__text"><a href="#">000mhz</a> like this</p>
+                            </li>
+                            <li class="reactionList__inner">
+                                <img src="http://dummyimage.com/16x16/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="reactionList__img">
+                                <p class="reactionList__text"><a href="#">000mhz</a> like this</p>
+                            </li>
+                        </ul>
+                        <div class="reactionBox__more"><a href="#">more▼</a></div>
+                    </div>
+                    {/block:PostNotes}
+            </article>
+            {/block:Text}
+            {block:Photo}
+                <article class="articleBox">
+                    {block:Date}
+                        <div class="articleBox__header">
+                            <time class="articleBox__date">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}</time>
+                        </div>
+                    {/block:Date}
+                    <img src="{PhotoURL-500}" alt="{PhotoAlt}">
+                    {block:Caption}<div class="articleBox__text">{Caption}</div>{/block:Caption} 
+                </article>
+            {/block:Photo}
+            {block:Video}
+                <article class="articleBox">
+                    {block:Date}
+                        <div class="articleBox__header">
+                            <time class="articleBox__date">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}</time>
+                        </div>
+                    {/block:Date}
+                    {Video-500}
+                    {block:Caption}<div class="articleBox__text">{Caption}</div>{/block:Caption} 
+                </article>
+            {/block:Video}
+        {/block:Posts}
+    </section>
+
+    {block:Pagination}
+    <ul class="pagingNavi">
+        <li class="pagingNavi__prev">{block:PreviousPage}<a href="{PreviousPage}">{/block:PreviousPage}&lt;新しい投稿{block:PreviousPage}</a>{/block:PreviousPage}</li>
+        <li class="pagingNavi__no">{CurrentPage}/{TotalPages}</li>
+        {block:NextPage}<li class="pagingNavi__next">{block:NextPage}<a href="{NextPage}">{/block:NextPage}古い投稿&gt;{block:NextPage}</a>{/block:NextPage}</li>
+    </ul>
+    {/block:Pagination}
+</div>
+<% include "common/sidebar.ect" %>

@@ -10,37 +10,49 @@
     <meta name="description" content="{MetaDescription}">
     <meta name="Copyright" content="">
 
+    <meta name="viewport" content="width=device-width">
+
     <!--//////////////     Twitter Account設定     //////////////-->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="**アカウント名**">
+    <!-- <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="**アカウント名**"> -->
 
     <!--//////////////     OGP Metaタグ設定     //////////////-->
-    <meta property="og:title" content="**タイトル**">
+    <!-- <meta property="og:title" content="**タイトル**">
     <meta property="og:description" content="**サイトの説明**">
     <meta property="og:url" content="**サイトのURL**">
     <meta property="og:image" content="**使用する画像URL**">
     <meta property="og:site_name" content="wordbook.asia">
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="ja_JP">
+    <meta property="og:locale" content="ja_JP"> -->
+
+    <!--//////////////     Tumblrカスタムオプション    //////////////-->
+    <meta name="image:Index" content="" />
 
     <!--//////////////     付加リンク    //////////////-->
     <link rel="shortcut icon" href="{Favicon}" />
     <link rel="alternate" type="application/rss+xml" href="{RSS}" />
 
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans|Sniglet">
     <link rel="stylesheet" href="<%- @source_domain %>css/trunk-tumblr.css">
 
     <!--[if lt IE 9]>
-        <script src="js/html5shiv.min.js"></script>
+        <script src="<%- @source_domain %>js/html5shiv.min.js"></script>
     <![endif]-->
 </head>
-<body class="page-<% content "page-class" %>">
+<body class="{block:TagPage} page-tag{/block:TagPage}{block:PermalinkPage} page-single{/block:PermalinkPage}">
     <div class="l-wrapper">
         <% include "common/header.ect" %>
         <div class="l-container clearfix">
             <% content %>
         </div>
         <footer class="l-mainFooter">
-            <small class="copyright">ミケトロイズ 2014 Allright Reserved.</small>
+            <small class="copyright">ミケトロイズ {CopyrightYears} Allright Reserved.</small>
+            {block:IndexPage}
+            <ul class="fotter-socialButtonList">
+                <li class="facebook"><div class="fb-like" data-href="http://miketoroizu.info/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></li>
+                <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="miketoroizu">Tweet</a></li>
+            </ul>
+            {/block:IndexPage}
         </footer>
     </div>
     <div id="fb-root"></div>
@@ -51,7 +63,7 @@
       js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=174963715893390&version=v2.0";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-    <script src="js/script.js"></script>
+    <script src="<%- @source_domain %>js/script.min.js"></script>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </body>
 </html>

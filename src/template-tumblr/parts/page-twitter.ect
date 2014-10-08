@@ -1,12 +1,10 @@
-<% block "title": %>トップページ<% end %>
-<% block "page-class": %>top<% end %>
-<% extend "../layout/default.ect" %>
 <div class="l-mainContent">
     <h2 class="pageTitle"><div class="pageTitle__inner"><span class="titleIcon icon-title-twitter"></span>Twitter</div></h2>
     <section class="articleWrapper">
         <div class="twitterBox clearfix">
             <div class="twitterBox__imgBox">
-                <img src="img/twitter/twitter-ari.png" alt="" class="twitterBox__img">
+                <img src="<%- @source_domain %>img/twitter/twitter-ari.png" width="88" alt="" class="twitterBox__img">
+                <p>ありちゃん<span class="twitterBox_id">@miketoroizu</span></p>
             </div>
             <div class="twitterBox__widget">
                 <a class="twitter-timeline"  href="https://twitter.com/miketoroizu" data-widget-id="511492193022783488">@miketoroizu からのツイート</a>
@@ -14,7 +12,8 @@
         </div>
         <div class="twitterBox clearfix">
             <div class="twitterBox__imgBox">
-                <img src="img/twitter/twitter-chico.png" alt="" class="twitterBox__img">
+                <img src="<%- @source_domain %>img/twitter/twitter-chico.png" width="88" alt="" class="twitterBox__img">
+                <p>ちこにゃん<span class="twitterBox_id">@chiko25011</span></p>
             </div>
             <div class="twitterBox__widget">
                 <a class="twitter-timeline"  href="https://twitter.com/miketoroizu" data-widget-id="511492193022783488">@miketoroizu からのツイート</a>
@@ -22,7 +21,8 @@
         </div>
         <div class="twitterBox clearfix">
             <div class="twitterBox__imgBox">
-                <img src="img/twitter/twitter-natu.png" alt="" class="twitterBox__img">
+                <img src="<%- @source_domain %>img/twitter/twitter-natu.png" width="88" alt="" class="twitterBox__img">
+                <p>なつみん<span class="twitterBox_id">@__________ns</span></p>
             </div>
             <div class="twitterBox__widget">
                 <a class="twitter-timeline"  href="https://twitter.com/miketoroizu" data-widget-id="511492193022783488">@miketoroizu からのツイート</a>
@@ -31,4 +31,4 @@
     </section>
 
 </div>
-<% include "../common/sidebar.ect" %>
+<% include "common/sidebar.ect" %>

@@ -1,0 +1,55 @@
+<div class="l-mainContent">
+    <h2 class="pageTitle"><div class="pageTitle__inner"><span class="titleIcon icon-title-{URLSafeTag}"></span>{Tag}</div></h2>
+    <section class="articleWrapper">
+        {block:Posts}
+            <article class="articleBox">
+                {block:Text}
+                    {block:Date}
+                        <div class="articleBox__header">
+                            <time class="articleBox__date">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}</time>
+                        </div>
+                    {/block:Date}
+                    {block:Title}<h3 class="articleBox__heading"><a href="{Permalink}"><span class="icon-footprint"></span>{Title}</a></h3>{/block:Title}
+                    <div class="articleBox__text">{Body}</div>
+                {/block:Text}
+                {block:Photo}
+                    {block:Date}
+                        <div class="articleBox__header">
+                            <time class="articleBox__date"><a href="{Permalink}">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}</a></time>
+                        </div>
+                    {/block:Date}
+                    <img src="{PhotoURL-500}" alt="{PhotoAlt}">
+                    {block:Caption}<div class="articleBox__text">{Caption}</div>{/block:Caption}
+                {/block:Photo}
+                {block:Audio}
+                    {block:Date}
+                        <div class="articleBox__header">
+                            <time class="articleBox__date"><a href="{Permalink}">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}</a></time>
+                        </div>
+                    {/block:Date}
+                    {block:AudioEmbed}{AudioEmbed-500}{/block:AudioEmbed}
+                    {block:AudioPlayer}{AudioPlayer}{/block:AudioPlayer}
+                    {block:Caption}<div class="articleBox__text">{Caption}</div>{/block:Caption}
+                {/block:Audio}
+                {block:Video}
+                    {block:Date}
+                        <div class="articleBox__header">
+                            <time class="articleBox__date"><a href="{Permalink}">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}</a></time>
+                        </div>
+                    {/block:Date}
+                    {Video-500}
+                    {block:Caption}<div class="articleBox__text">{Caption}</div>{/block:Caption}
+                {/block:Video}
+            </article>
+        {/block:Posts}
+    </section>
+
+    {block:Pagination}
+    <ul class="pagingNavi">
+        <li class="pagingNavi__prev">{block:PreviousPage}<a href="{PreviousPage}">{/block:PreviousPage}&lt;新しい投稿{block:PreviousPage}</a>{/block:PreviousPage}</li>
+        <li class="pagingNavi__no">{CurrentPage}/{TotalPages}</li>
+        {block:NextPage}<li class="pagingNavi__next">{block:NextPage}<a href="{NextPage}">{/block:NextPage}古い投稿&gt;{block:NextPage}</a>{/block:NextPage}</li>
+    </ul>
+    {/block:Pagination}
+</div>
+<% include "common/sidebar.ect" %>

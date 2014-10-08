@@ -1,7 +1,10 @@
-<% block "title": %>トップページ<% end %>
-<% block "page-class": %>top<% end %>
 <% extend "layout/default.ect" %>
 {block:IndexPage}
-	<% include "parts/index.ect" %>
+	<% include "parts/page-top.ect" %>
 {/block:IndexPage}
-<% include "parts/list.ect" %>
+{block:TagPage}
+	<% include "parts/page-tag.ect" %>
+{/block:TagPage}
+{block:PermalinkPage}
+	<% include "parts/page-single.ect" %>
+{/block:PermalinkPage}
