@@ -317,7 +317,7 @@ iframe[name="google_conversion_frame"] {
         overflow: hidden;
         width: 110px;
         height: 46px;
-        background-position: -777px -781px; }
+        background-position: -842px 0px; }
       .headerMenu-listInner a:hover .menu-profile {
         display: inline-block;
         background-image: url("../img/sprite.png");
@@ -325,7 +325,7 @@ iframe[name="google_conversion_frame"] {
         overflow: hidden;
         width: 117px;
         height: 56px;
-        background-position: -272px -781px; }
+        background-position: -272px -780px; }
       .headerMenu-listInner a:hover .menu-live {
         display: inline-block;
         background-image: url("../img/sprite.png");
@@ -333,7 +333,7 @@ iframe[name="google_conversion_frame"] {
         overflow: hidden;
         width: 77px;
         height: 61px;
-        background-position: -324px -689px; }
+        background-position: -285px -689px; }
       .headerMenu-listInner a:hover .menu-music {
         display: inline-block;
         background-image: url("../img/sprite.png");
@@ -341,7 +341,7 @@ iframe[name="google_conversion_frame"] {
         overflow: hidden;
         width: 110px;
         height: 57px;
-        background-position: -48px -781px; }
+        background-position: -48px -780px; }
       .headerMenu-listInner a:hover .menu-blog {
         display: inline-block;
         background-image: url("../img/sprite.png");
@@ -349,7 +349,7 @@ iframe[name="google_conversion_frame"] {
         overflow: hidden;
         width: 81px;
         height: 60px;
-        background-position: -640px -689px; } }
+        background-position: -648px -689px; } }
   @media screen and (max-width: 640px) {
     .headerMenu-listInner {
       width: 25%; }
@@ -514,7 +514,7 @@ iframe[name="google_conversion_frame"] {
     width: 267.5px;
     height: 74px;
     background-position: -153px 0px;
-    background-size: 500px 420px; } }
+    background-size: 476px 420px; } }
 
 @media screen and (min-width: 641px) {
   .icon-title-music {
@@ -524,7 +524,7 @@ iframe[name="google_conversion_frame"] {
     overflow: hidden;
     width: 71px;
     height: 62px;
-    background-position: -251px -689px; } }
+    background-position: -212px -689px; } }
 @media screen and (max-width: 640px) {
   .icon-title-music {
     display: inline-block;
@@ -534,7 +534,7 @@ iframe[name="google_conversion_frame"] {
     width: 52px;
     height: 52px;
     background-position: -356px -149px;
-    background-size: 500px 420px; } }
+    background-size: 476px 420px; } }
 
 @media screen and (min-width: 641px) {
   .icon-title-news {
@@ -544,7 +544,7 @@ iframe[name="google_conversion_frame"] {
     overflow: hidden;
     width: 82px;
     height: 52px;
-    background-position: -630px -781px; } }
+    background-position: -630px -780px; } }
 @media screen and (max-width: 640px) {
   .icon-title-news {
     display: inline-block;
@@ -553,8 +553,8 @@ iframe[name="google_conversion_frame"] {
     overflow: hidden;
     width: 42.5px;
     height: 30.5px;
-    background-position: -237px -345px;
-    background-size: 500px 420px; } }
+    background-position: -257px -345px;
+    background-size: 476px 420px; } }
 
 @media screen and (min-width: 641px) {
   .icon-title-profile {
@@ -564,7 +564,7 @@ iframe[name="google_conversion_frame"] {
     overflow: hidden;
     width: 69px;
     height: 61px;
-    background-position: -403px -689px; } }
+    background-position: -364px -689px; } }
 @media screen and (max-width: 640px) {
   .icon-title-profile {
     display: inline-block;
@@ -574,7 +574,7 @@ iframe[name="google_conversion_frame"] {
     width: 54px;
     height: 51px;
     background-position: -311px -221px;
-    background-size: 500px 420px; } }
+    background-size: 476px 420px; } }
 
 @media screen and (min-width: 641px) {
   .icon-title-twitter {
@@ -584,7 +584,7 @@ iframe[name="google_conversion_frame"] {
     overflow: hidden;
     width: 61px;
     height: 47px;
-    background-position: -714px -781px; } }
+    background-position: -714px -780px; } }
 @media screen and (max-width: 640px) {
   .icon-title-twitter {
     display: inline-block;
@@ -593,8 +593,8 @@ iframe[name="google_conversion_frame"] {
     overflow: hidden;
     width: 54.5px;
     height: 44.5px;
-    background-position: -70px -345px;
-    background-size: 500px 420px; } }
+    background-position: 0px -345px;
+    background-size: 476px 420px; } }
 
 @media screen and (min-width: 641px) {
   .icon-title-live {
@@ -602,9 +602,9 @@ iframe[name="google_conversion_frame"] {
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     overflow: hidden;
-    width: 67px;
-    height: 91px;
-    background-position: -732px -441px; } }
+    width: 53px;
+    height: 68px;
+    background-position: -111px -689px; } }
 @media screen and (max-width: 640px) {
   .icon-title-live {
     display: inline-block;
@@ -614,7 +614,7 @@ iframe[name="google_conversion_frame"] {
     width: 33.5px;
     height: 45.5px;
     background-position: -385px -78px;
-    background-size: 500px 420px; } }
+    background-size: 476px 420px; } }
 
 @media screen and (min-width: 641px) {
   .icon-title-blog {
@@ -622,9 +622,9 @@ iframe[name="google_conversion_frame"] {
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     overflow: hidden;
-    width: 68px;
-    height: 90px;
-    background-position: 0px -689px; } }
+    width: 44px;
+    height: 66px;
+    background-position: -166px -689px; } }
 @media screen and (max-width: 640px) {
   .icon-title-blog {
     display: inline-block;
@@ -633,8 +633,8 @@ iframe[name="google_conversion_frame"] {
     overflow: hidden;
     width: 34px;
     height: 45px;
-    background-position: -35px -345px;
-    background-size: 500px 420px; } }
+    background-position: -366px -221px;
+    background-size: 476px 420px; } }
 
 @media screen and (min-width: 641px) {
   .icon-footprint {
@@ -644,7 +644,7 @@ iframe[name="google_conversion_frame"] {
     overflow: hidden;
     width: 20px;
     height: 20px;
-    background-position: -956px -48px; } }
+    background-position: -909px -96px; } }
 @media screen and (max-width: 640px) {
   .icon-footprint {
     display: inline-block;
@@ -653,8 +653,8 @@ iframe[name="google_conversion_frame"] {
     overflow: hidden;
     width: 19px;
     height: 19px;
-    background-position: -445px -24px;
-    background-size: 500px 420px; } }
+    background-position: -421px -48px;
+    background-size: 476px 420px; } }
 
 .icon-more-arrow {
   display: inline-block;
@@ -663,8 +663,8 @@ iframe[name="google_conversion_frame"] {
   overflow: hidden;
   width: 12.5px;
   height: 11.5px;
-  background-position: -465px -24px;
-  background-size: 500px 420px; }
+  background-position: -441px -48px;
+  background-size: 476px 420px; }
 
 .menu-blog {
   display: inline-block;
@@ -673,7 +673,7 @@ iframe[name="google_conversion_frame"] {
   overflow: hidden;
   width: 81px;
   height: 60px;
-  background-position: -723px -689px; }
+  background-position: -731px -689px; }
 
 @media screen and (min-width: 641px) {
   .menu-live {
@@ -683,7 +683,7 @@ iframe[name="google_conversion_frame"] {
     overflow: hidden;
     width: 77px;
     height: 61px;
-    background-position: -561px -689px; } }
+    background-position: -435px -689px; } }
 @media screen and (max-width: 640px) {
   .menu-live {
     display: inline-block;
@@ -693,7 +693,7 @@ iframe[name="google_conversion_frame"] {
     width: 32.5px;
     height: 60px;
     background-position: -151px -78px;
-    background-size: 500px 420px; } }
+    background-size: 476px 420px; } }
 
 @media screen and (min-width: 641px) {
   .menu-music {
@@ -703,7 +703,7 @@ iframe[name="google_conversion_frame"] {
     overflow: hidden;
     width: 110px;
     height: 57px;
-    background-position: -160px -781px; } }
+    background-position: -160px -780px; } }
 @media screen and (max-width: 640px) {
   .menu-music {
     display: inline-block;
@@ -713,7 +713,7 @@ iframe[name="google_conversion_frame"] {
     width: 41.5px;
     height: 57.5px;
     background-position: -232px -78px;
-    background-size: 500px 420px; } }
+    background-size: 476px 420px; } }
 
 @media screen and (min-width: 641px) {
   .menu-news {
@@ -723,7 +723,7 @@ iframe[name="google_conversion_frame"] {
     overflow: hidden;
     width: 110px;
     height: 46px;
-    background-position: -889px 0px; } }
+    background-position: -842px -48px; } }
 @media screen and (max-width: 640px) {
   .menu-news {
     display: inline-block;
@@ -733,7 +733,7 @@ iframe[name="google_conversion_frame"] {
     width: 44px;
     height: 53.5px;
     background-position: -311px -149px;
-    background-size: 500px 420px; } }
+    background-size: 476px 420px; } }
 
 @media screen and (min-width: 641px) {
   .menu-profile {
@@ -743,7 +743,7 @@ iframe[name="google_conversion_frame"] {
     overflow: hidden;
     width: 117px;
     height: 56px;
-    background-position: -449px -781px; } }
+    background-position: -449px -780px; } }
 @media screen and (max-width: 640px) {
   .menu-profile {
     display: inline-block;
@@ -753,7 +753,7 @@ iframe[name="google_conversion_frame"] {
     width: 46px;
     height: 58.5px;
     background-position: -185px -78px;
-    background-size: 500px 420px; } }
+    background-size: 476px 420px; } }
 
 @media screen and (min-width: 641px) {
   .banner-mail {
@@ -773,7 +773,7 @@ iframe[name="google_conversion_frame"] {
     width: 310px;
     height: 70.5px;
     background-position: 0px -149px;
-    background-size: 500px 420px; } }
+    background-size: 476px 420px; } }
 
 .banner-blog {
   display: inline-block;
@@ -783,7 +783,7 @@ iframe[name="google_conversion_frame"] {
   width: 310px;
   height: 70.5px;
   background-position: 0px -221px;
-  background-size: 500px 420px; }
+  background-size: 476px 420px; }
 
 @media screen and (min-width: 641px) {
   .banner-store {
@@ -803,7 +803,7 @@ iframe[name="google_conversion_frame"] {
     width: 150px;
     height: 70.5px;
     background-position: 0px -78px;
-    background-size: 500px 420px; } }
+    background-size: 476px 420px; } }
 
 @media screen and (min-width: 641px) {
   .banner-twitter {
@@ -823,7 +823,7 @@ iframe[name="google_conversion_frame"] {
     width: 151.5px;
     height: 76.5px;
     background-position: 0px 0px;
-    background-size: 500px 420px; } }
+    background-size: 476px 420px; } }
 
 .clearfix {
   zoom: 1; }
