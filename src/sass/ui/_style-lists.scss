@@ -53,7 +53,8 @@
     }
 
     > img,
-    > iframe{
+    > iframe,
+    .html_photoset iframe{
         max-width: 100%;
 
         @media screen and (min-width: $break-width-pc){

@@ -1153,15 +1153,18 @@ iframe[name="google_conversion_frame"] {
     .articleBox {
       padding: 12px 5px 12px; } }
   .articleBox > img,
-  .articleBox > iframe {
+  .articleBox > iframe,
+  .articleBox .html_photoset iframe {
     max-width: 100%; }
     @media screen and (min-width: 641px) {
       .articleBox > img,
-      .articleBox > iframe {
+      .articleBox > iframe,
+      .articleBox .html_photoset iframe {
         margin-bottom: 10px; } }
     @media screen and (max-width: 640px) {
       .articleBox > img,
-      .articleBox > iframe {
+      .articleBox > iframe,
+      .articleBox .html_photoset iframe {
         margin-bottom: 8px; } }
 
 @media screen and (min-width: 641px) {
