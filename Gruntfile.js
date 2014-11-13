@@ -22,7 +22,7 @@ module.exports = function(grunt){
       },
       tumblr : {
         variables : {
-          source_domain : "//cdn.rawgit.com/takuhito-h/miketroizu-source/master/"
+          source_domain : "//rawgit.com/takuhito-h/miketroizu-source/master/"
           // source_domain : ""
           // source_domain : "https://dl.dropboxusercontent.com/u/12913911/miketrois/"
         },
