@@ -56,6 +56,7 @@
     > iframe,
     .html_photoset iframe{
         max-width: 100%;
+        height: auto;
 
         @media screen and (min-width: $break-width-pc){
             margin-bottom: 10px;

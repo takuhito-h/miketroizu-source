@@ -183,7 +183,7 @@ th {
 
 body {
   overflow: hidden;
-  background: white url(../img/common/bg-texture.png);
+  background: #fff url(../img/common/bg-texture.png);
   text-rendering: optimizeLegibility;
   color: #4b4b4b;
   font-size: 12px;
@@ -1155,7 +1155,8 @@ iframe[name="google_conversion_frame"] {
   .articleBox > img,
   .articleBox > iframe,
   .articleBox .html_photoset iframe {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto; }
     @media screen and (min-width: 641px) {
       .articleBox > img,
       .articleBox > iframe,
