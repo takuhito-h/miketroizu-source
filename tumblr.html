@@ -123,9 +123,9 @@
 
     {block:Pagination}
     <ul class="pagingNavi">
-        <li class="pagingNavi__prev">{block:PreviousPage}<a href="{PreviousPage}">{/block:PreviousPage}&lt;新しい投稿{block:PreviousPage}</a>{/block:PreviousPage}</li>
+        <li class="pagingNavi__prev">{block:PreviousPage}<a href="{PreviousPage}">&lt;新しい投稿</a>{/block:PreviousPage}</li>
         <li class="pagingNavi__no">{CurrentPage}/{TotalPages}</li>
-        {block:NextPage}<li class="pagingNavi__next">{block:NextPage}<a href="{NextPage}">{/block:NextPage}古い投稿&gt;{block:NextPage}</a>{/block:NextPage}</li>
+        <li class="pagingNavi__next">{block:NextPage}<a href="{NextPage}">古い投稿&gt;</a>{/block:NextPage}</li>
     </ul>
     {/block:Pagination}
 </div>
